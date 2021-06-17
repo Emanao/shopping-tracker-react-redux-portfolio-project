@@ -33,6 +33,9 @@ gem 'rack-cors'
 #This gem allows resetting the id of an AR table to 0. It is useful after a delete_all command. It works in Postgres, Sqlite and MySQL up to now.
 gem 'activerecord-reset-pk-sequence'
 
+# It works with rails and can be used to serialize any kind of ruby objects
+gem "fast_jsonapi"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
